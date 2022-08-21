@@ -1,0 +1,104 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272727;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .form-container {
+    padding: 60px;
+  }
+}
+
+.website-logo {
+  width: 90px;
+  margin-bottom: 40px;
+}
+
+@media scree and (min-width: 768px) {
+  .website-logo {
+    width: 130px;
+  }
+}
+.login-details-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.input-label {
+  font-family: 'Roboto';
+  color: #f1f5f9;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.username-input-filed {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #2c364c;
+  background-color: transparent;
+  color: #f8fafc;
+}
+.password-input-filed {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  border: 2px solid #2c364c;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #f8fafc;
+}
+.login-button {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #6366f1;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.error-message {
+  align-self: start;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff0b37;
+}
