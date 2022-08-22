@@ -4,21 +4,13 @@
   align-items: center;
   background-color: #202020;
   height: 15vh;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@media screen and (min-width: 768px) {
-  .nav-header {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
 
 .nav-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -80,6 +72,13 @@
   margin-left: 10px;
   background: transparent;
   border: none;
+}
+.mobile-view {
+  display: flex;
+}
+.icons-list-container {
+  list-style-type: none;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {

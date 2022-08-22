@@ -1,0 +1,132 @@
+.job-card {
+  background-color: #202020;
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .job-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.logo-title-container {
+  display: flex;
+  align-items: center;
+}
+.link-item {
+  text-decoration: none;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+}
+.title-details-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #f8fafc;
+  font-weight: 600;
+}
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+.star-icon {
+  color: #fbbf24;
+  width: 25px;
+  height: 35px;
+  margin-right: 7px;
+}
+@media screen and (min-width: 768px) {
+  .star-icon {
+    width: 30px;
+    height: 45px;
+    margin-right: 10px;
+  }
+}
+.location-type-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.location-type-details-container {
+  display: flex;
+}
+.location-container {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.location-icon {
+  color: #f8fafc;
+  width: 25px;
+  height: 35px;
+  margin-right: 7px;
+}
+@media screen and (min-width: 768px) {
+  .location-icon {
+    width: 30px;
+    height: 45px;
+    margin-right: 10px;
+  }
+}
+.location {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #f8fafc;
+}
+.case-icon {
+  color: #f8fafc;
+  width: 25px;
+  height: 35px;
+  margin-right: 7px;
+}
+@media screen and (min-width: 768px) {
+  .case-icon {
+    width: 30px;
+    height: 45px;
+    margin-right: 10px;
+  }
+}
+
+.job-type-container {
+  display: flex;
+  align-items: center;
+}
+.employment-type {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #f8fafc;
+}
+.salary {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #f8fafc;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .salary {
+    font-size: 20px;
+  }
+}
+
+.description-heading {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #f8fafc;
+}
+.job-description {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #f8fafc;
+}
