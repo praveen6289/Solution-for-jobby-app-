@@ -1,7 +1,8 @@
 import './index.css'
 
 const SkillsList = props => {
-  const {skillImageUrl, name} = props
+  const {skillDetails} = props
+  const {skillImageUrl, name} = skillDetails
 
   return (
     <li className="skill-container">

@@ -4,8 +4,7 @@ import {HiLocationMarker} from 'react-icons/hi'
 import {AiFillStar} from 'react-icons/ai'
 
 const SimilarJobItem = props => {
-  const {jobDetails} = props
-  console.log(jobDetails)
+  const {jobsDetails} = props
   const {
     companyLogo,
     employmentType,
@@ -14,7 +13,7 @@ const SimilarJobItem = props => {
     location,
     rating,
     title,
-  } = jobDetails
+  } = jobsDetails
 
   return (
     <li className="similar-jobs-section" key={id}>

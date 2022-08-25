@@ -1,0 +1,35 @@
+.skill-container {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .skill-container {
+    width: 450px;
+    margin-bottom: 50px;
+  }
+}
+.skills-image {
+  width: 35px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills-image {
+    width: 50px;
+  }
+}
+.skills-title {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .skills-title {
+    font-size: 24px;
+  }
+}

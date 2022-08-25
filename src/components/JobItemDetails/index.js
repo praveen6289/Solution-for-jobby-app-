@@ -121,8 +121,8 @@ class JobItemDetails extends Component {
   renderFailureView = () => (
     <div className="job-details-failure-view-container">
       <img
-        alt="failure view"
         src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
+        alt="failure view"
         className="failure-view-image"
       />
       <h1 className="job-not-found-heading">Oops! Something Went Wrong</h1>
@@ -130,7 +130,7 @@ class JobItemDetails extends Component {
         We cannot seem to find the page you are looking for.
       </p>
       <Link to="/jobs">
-        <button type="button" className="button">
+        <button type="button" className="button" onClick={this.getJobData}>
           Retry
         </button>
       </Link>
@@ -156,7 +156,11 @@ class JobItemDetails extends Component {
       <div className="jobs-details-success-view">
         <div className="job-card">
           <div className="logo-title-container">
-            <img src={companyLogo} alt="job" className="logo" />
+            <img
+              src={companyLogo}
+              alt="job details company logo"
+              className="logo"
+            />
             <div className="title-details-container">
               <h1 className="title">{title}</h1>
               <div className="rating-container">
@@ -197,7 +201,7 @@ class JobItemDetails extends Component {
             <h1 className="skill-heading">Skills</h1>
             <ul className="skill-item-container">
               {skillData.map(eachSkill => (
-                <SkillsList skillDetails={eachSkill} key={id} />
+                <SkillsList skillDetails={eachSkill} key={eachSkill.name} />
               ))}
             </ul>
           </div>
@@ -207,14 +211,14 @@ class JobItemDetails extends Component {
               <p className="life-at-Description">{description}</p>
               <img
                 src={companyImageUrl}
-                alt="company-img"
+                alt="life at company"
                 className="company-img"
               />
             </div>
           </div>
         </div>
-        <h1 className="similar-products-heading">Similar Jobs</h1>
-        <ul className="similar-products-list">
+        <h1 className="similar-jobs-heading">Similar Jobs</h1>
+        <ul className="similar-jobs-list">
           {similarJobsData.map(eachSimilarJob => (
             <SimilarJobItem
               jobsDetails={eachSimilarJob}
